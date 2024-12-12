@@ -1387,197 +1387,213 @@ public class AddData extends javax.swing.JFrame {
             Statement worksStmt;
             ResultSet rsForWorks;
             int i = 0;
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("ग्रामीण_रस्ताचा_विकास_वा_मजबुती_करण")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.ग्रामीण_रस्ताचा_विकास_वा_मजबुती_करण";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("इतर_जिल्हा_रस्ते_विकास_व_मजबुतीकरण")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.इतर_जिल्हा_रस्ते_विकास_व_मजबुतीकरण";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("पुर_हानी_व_अतिवष्ठी")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.पुर_हानी_व_अतिवष्ठी";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("शासकीय_जमिनीवरील_अतिक्रमण_रोखण्यासाठी_संरक्षक_भिंत_बांधणे")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.शासकीय_जमिनीवरील_अतिक्रमण_रोखण्यासाठी_संरक्षक_भिंत_बांधणे";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("नावीन्यपूर्ण_योजना")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.नावीन्यपूर्ण_योजना";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("अपारंपारिक_उर्जा")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.अपारंपारिक_उर्जा";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("जिल्हा_नियोजन_मागणी_ओ_283451_सचिवालय_आर्थिक_सेवा")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.जिल्हा_नियोजन_मागणी_ओ_283451_सचिवालय_आर्थिक_सेवा";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("पर्यटन_स्थळ_विकास_मूलभूत_सुविधा_करणे")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.पर्यटन_स्थळ_विकास_मूलभूत_सुविधा_करणे";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("योजनांचे_मूल्यमापन_सनियंत्रण_व_डाटा_एंट्री_करणे")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.योजनांचे_मूल्यमापन_सनियंत्रण_व_डाटा_एंट्री_करणे";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("शासकीय_कार्यालयीन_इमारत_बांधकाम")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.शासकीय_कार्यालयीन_इमारत_बांधकाम";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-
-            }
-
-            if (updateyojnaComboBox.getSelectedItem().toString().equals("लाँच_खरेदीसाठी_जि_प_ला_अनुदान")) {
-
-                kamacheNaavComboBox.removeAllItems();
-                kamacheNaavComboBox.setSelectedItem(null);
-
-                String kaamQuery = "SELECT * FROM एमपीआर.लाँच_खरेदीसाठी_जि_प_ला_अनुदान";
-                worksStmt = config.conn.createStatement();
-                rsForWorks = worksStmt.executeQuery(kaamQuery);
-                works = new ArrayList<>();
-                while (rsForWorks.next()) {
-                    works.add(rsForWorks.getString("कामाचे_नांव"));
-                }
-
-                String[] worksArray = works.toArray(new String[0]);
-                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
-
-            }
 
             selectedTableName = "एमपीआर." + updateyojnaComboBox.getSelectedItem().toString();
+
+            kamacheNaavComboBox.removeAllItems();
+            kamacheNaavComboBox.setSelectedItem(null);
+
+            String kaamQuery = "SELECT * FROM " + selectedTableName + ";";
+            worksStmt = config.conn.createStatement();
+            rsForWorks = worksStmt.executeQuery(kaamQuery);
+            works = new ArrayList<>();
+            while (rsForWorks.next()) {
+                works.add(rsForWorks.getString("कामाचे_नांव"));
+            }
+
+            String[] worksArray = works.toArray(new String[0]);
+            kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("ग्रामीण_रस्ताचा_विकास_वा_मजबुती_करण")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.ग्रामीण_रस्ताचा_विकास_वा_मजबुती_करण";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("इतर_जिल्हा_रस्ते_विकास_व_मजबुतीकरण")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.इतर_जिल्हा_रस्ते_विकास_व_मजबुतीकरण";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("पुर_हानी_व_अतिवष्ठी")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.पुर_हानी_व_अतिवष्ठी";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("शासकीय_जमिनीवरील_अतिक्रमण_रोखण्यासाठी_संरक्षक_भिंत_बांधणे")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.शासकीय_जमिनीवरील_अतिक्रमण_रोखण्यासाठी_संरक्षक_भिंत_बांधणे";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("नावीन्यपूर्ण_योजना")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.नावीन्यपूर्ण_योजना";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("अपारंपारिक_उर्जा")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.अपारंपारिक_उर्जा";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("जिल्हा_नियोजन_मागणी_ओ_283451_सचिवालय_आर्थिक_सेवा")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.जिल्हा_नियोजन_मागणी_ओ_283451_सचिवालय_आर्थिक_सेवा";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("पर्यटन_स्थळ_विकास_मूलभूत_सुविधा_करणे")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.पर्यटन_स्थळ_विकास_मूलभूत_सुविधा_करणे";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("योजनांचे_मूल्यमापन_सनियंत्रण_व_डाटा_एंट्री_करणे")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.योजनांचे_मूल्यमापन_सनियंत्रण_व_डाटा_एंट्री_करणे";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("शासकीय_कार्यालयीन_इमारत_बांधकाम")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.शासकीय_कार्यालयीन_इमारत_बांधकाम";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//
+//            }
+//
+//            if (updateyojnaComboBox.getSelectedItem().toString().equals("लाँच_खरेदीसाठी_जि_प_ला_अनुदान")) {
+//
+//                kamacheNaavComboBox.removeAllItems();
+//                kamacheNaavComboBox.setSelectedItem(null);
+//
+//                String kaamQuery = "SELECT * FROM एमपीआर.लाँच_खरेदीसाठी_जि_प_ला_अनुदान";
+//                worksStmt = config.conn.createStatement();
+//                rsForWorks = worksStmt.executeQuery(kaamQuery);
+//                works = new ArrayList<>();
+//                while (rsForWorks.next()) {
+//                    works.add(rsForWorks.getString("कामाचे_नांव"));
+//                }
+//
+//                String[] worksArray = works.toArray(new String[0]);
+//                kamacheNaavComboBox.setModel(new DefaultComboBoxModel(worksArray));
+//
+//            }
+//            selectedTableName = "एमपीआर." + updateyojnaComboBox.getSelectedItem().toString();
         } catch (Exception ex) {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(null, "Database exception occured : " + ex.toString(), "Monthly Progress Report", JOptionPane.ERROR_MESSAGE);
@@ -2649,8 +2665,7 @@ public class AddData extends javax.swing.JFrame {
                 kharchWithGstCell.setCellValue(Long.toString(kharchWithGstSum));
                 kharchWithGstCell.setCellStyle(style);
 
-                
-                 sheet.setFitToPage(true); 
+                sheet.setFitToPage(true);
 
                 PrintSetup printSetup = sheet.getPrintSetup();
                 printSetup.setLandscape(true);
@@ -2658,9 +2673,8 @@ public class AddData extends javax.swing.JFrame {
 //               // Enable fit to page
 //                printSetup.setFitWidth((short) 1); // Fit all columns to one page
 //                printSetup.setFitHeight((short) 0);
-                
-               printSetup.setPaperSize(PrintSetup.LETTER_PAPERSIZE);
-                
+
+                printSetup.setPaperSize(PrintSetup.LETTER_PAPERSIZE);
 
                 FileOutputStream out = new FileOutputStream(new File(saveFile.toString()));
                 wb.write(out);
